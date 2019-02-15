@@ -1,0 +1,114 @@
+@charset "utf-8";
+html {
+    color: #000;
+    background: #fff;
+    overflow-y: scroll;
+    -webkit-text-size-adjust: 100 % ;
+    -ms-text-size-adjust: 100 %;
+}
+html * {
+    outline: 0;
+    -webkit-text-size-adjust: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+html,body {
+    font-family: PingFangSC-Light,'pingfang','helvetica neue','hiragino sans gb',arial,'microsoft yahei ui','microsoft yahei',simsun,sans-serif;
+}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td,hr,button,article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+	font-size: 12px;
+  margin: 0;
+  padding: 0;
+}
+s{
+	text-decoration: none;
+}
+b{
+	font-weight: normal;
+}
+i{
+	font-style: normal;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+fieldset,img {
+    border: 0
+}
+abbr,acronym {
+    border: 0;
+    font-variant: normal
+}
+del {
+    text-decoration: line - through
+}
+address,caption,cite,code,dfn,th,var {
+    font-style: normal;
+    font-weight: 500
+}
+ol,ul {
+    list-style: none
+}
+caption,th {
+    text-align: left
+}
+h1,h2,h3,h4,h5,h6 {
+    font-weight: normal;
+}
+sub,sup {
+    font-size: 75 % ;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline
+}
+sup {
+    top: -.5em
+}
+sub {
+    bottom: -.25em
+}
+a{
+	color:#333;
+}
+a: hover {
+    text-decoration: underline
+}
+ins,a {
+    text-decoration: none
+}
+input{
+	border:none;
+	outline: none;
+}
+.clear:after{
+  display: block;
+  content: '';
+  clear: both;
+}
+.content-container .fr-box.fr-basic .fr-element{
+  padding: 20px 16px;
+}
+body::-webkit-scrollbar{
+  /* display: none; */
+  width: 0;
+  /* height: 0; */
+}
+.haigui-section::-webkit-scrollbar{
+  width: 0;
+}
+/* 富文本样式 */
+.fr-wrapper .fr-element p{
+  font-size: 14px;
+}
+.fr-wrapper .fr-element ol{
+  padding-left: 10px;
+  list-style: decimal;
+}
+.fr-wrapper .fr-element ul{
+  list-style: disc;
+  padding-left: 10px;
+}
+.fr-wrapper .fr-element li{
+  font-size: 14px;
+  line-height: 22px;
+}

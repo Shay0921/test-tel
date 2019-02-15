@@ -1,0 +1,327 @@
+/* 模态框 */
+.overlay{
+	position:fixed;
+	top:0;left:0;
+	z-index:1000;
+	width:100%;
+	height:100%;
+	opacity:0.5;
+	background:#000;
+}
+.haigui-modal__wrapper{
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	overflow: auto;
+	z-index: 1024;
+}
+.haigui-modal{
+	width: 50%;
+	position: relative;
+	margin: 0 auto 50px;
+	margin-top: 15vh;
+	background: #fff;
+	border-radius: 2px;
+	box-shadow: 0 1px 3px rgba(0,0,0,.3);
+	box-sizing: border-box;
+}
+.haigui-modal-container{
+	width: 1300px;
+	position: relative;
+	left:0px;
+	transition: all 0.3s linear;
+}
+.haigui-modal .haigui-modal-title{
+	height: 55px;
+	padding: 20px;
+	box-sizing: border-box;
+	background:#fff;
+	border-bottom:1px solid #EBEEF5;
+}
+.haigui-modal .haigui-modal-title p{
+	line-height: 24px;
+	font-size: 16px;
+	color: #303133;
+}
+.haigui-modal .el-icon-close{
+	position:absolute;
+	top:20px;right:14px;
+	font-size: 20px;
+	cursor: pointer;
+}
+.haigui-modal-content{
+	padding:20px;
+	background:#fff;
+}
+.haigui-modal-btn{
+  padding: 14px;
+  text-align: right;
+	border-top:1px solid #EBEEF5;
+  /* background: #F5F6FA; */
+  /* border-top: 1px solid #E8E8E8; */
+}
+/* haigui-tabs */
+.haigui-tabs{
+  /* padding: 20px;
+  margin: 15px 15px 0 10px;
+  box-shadow: 0 0 8px 1px #ddd;
+  background: #fff;
+  border-radius: 4px; */
+}
+.haigui-tabs .haigui-tabs-nav{
+    overflow: hidden;
+    border-bottom: 1px solid #d1dbe5;
+}
+.haigui-tabs .haigui-tabs-nav li{
+  padding: 0 15px;
+  height: 42px;
+  box-sizing: border-box;
+  line-height: 42px;
+  display: inline-block;
+  list-style: none;
+  font-size: 14px;
+  color: #8391a5;
+  cursor: pointer;
+}
+.haigui-tabs .haigui-tabs-nav .is-active{
+  border-bottom: 3px solid #20A0FF;
+  color: #20A0FF;
+}
+.haigui-tabs .haigui-tabs-content>div{
+  display: none;
+}
+.haigui-tabs .haigui-tabs-content>div:first-child{
+  display: block;
+}
+/* 设置通用样式 */
+/* 设置标题 */
+.haigui-title{
+  display: inline-block;
+  width: 180px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 18px;
+  color: #20a0ff;
+}
+/* 设置主体内容框 */
+.haigui-section{
+  height: calc(100vh - 120px);
+  overflow-y: scroll;
+  overflow-x: hidden;
+  margin: 10px 0 0 0;
+  /* padding: 20px; */
+  box-shadow: 0 0 8px 1px #ddd;
+  border-radius: 4px;
+  background: #fff;
+  box-sizing: border-box;
+  transition: all ease .4s;
+}
+/* 设置详情条数 */
+/* .haigui-section .el-form-item{
+  border-bottom: 1px solid #e0e0e0;
+  padding: 10px 10px 20px 10px;
+  margin-bottom: 10px;
+}
+.haigui-section .el-form-item .el-form-item__label{
+  display: inline-block;
+  float: none;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  padding: 0;
+  color: #333;
+} */
+.haigui-section .el-form-item h6{
+  color: #666;
+  font-size: 12px;
+}
+/* .haigui-section .el-form-item__content>.el-input .el-input__inner{
+  width: 50%;
+} */
+/* 选择颜色开始 */
+.checkColor {
+	position: relative;
+}
+.checkColor label{
+	padding: 11px 26px 11px 0;
+}
+.checkColor b{
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	margin-right: 8px;
+}
+.checkColor span{
+	display: inline-block;
+	height: 36px;
+	line-height: 30px;
+	outline: 0;
+	padding: 3px 10px;
+	border: 1px solid #bfcbd9;
+	background: #fff;
+	border-radius: 4px;
+	box-sizing: border-box;
+	color: #1f2d3d;
+	font-size: inherit;
+	cursor: pointer;
+	transition: border-color .2s cubic-bezier(.645,.045,.355,1);
+}
+.checkColor span:hover{
+	border-color: #8391a5;
+}
+.checkColor ul{
+	display: none;
+	position: absolute;
+	left: 110px;
+	top: 36px;
+	width: 142px;
+	z-index: 1000;
+	visibility: visible;
+	border-radius: 4px;
+	text-align: left;
+	line-height: 25px;
+	padding: 7px 10px;
+	white-space: nowrap;
+	border: 1px solid #bbb;
+	box-shadow: 0 1px 3px rgba(0,0,0,.2);
+	background: #fff;
+	cursor: default;
+	outline: 0;
+}
+.checkColor ul li{
+	float: left;
+	height: 18px;
+	padding: 2px;
+	margin-right: 8px;
+	border: 1px solid transparent;
+	cursor: pointer;
+}
+.checkColor ul li:hover{
+	border-color: #CDE3F3;
+}
+.checkColor ul li b{
+	margin: 2px 0;
+	padding: 2px;
+}
+/* 选择颜色结束 */
+/* 暂无数据 empty */
+.haigui-empty{
+	padding: 10px 0;
+	text-align: center;
+	font-size: 14px;
+	color: #909399;
+}
+.el-textarea__inner{
+  height: 100px;
+  width: 100%;
+	max-height: 100px;
+	min-height: 100px !important;
+	font-family: 微软雅黑 !important;
+}
+.haigui-float{
+	 position: absolute;
+	 transform: translateY(68px);
+	 z-index: 1000;
+	 width: 450px;
+	 box-shadow: 0 0 8px 1px #ddd;
+	 transition: all .3s linear;
+ }
+ .float-transition-enter-active {
+	 transition: all .3s ease;
+ }
+ .float-transition-leave-active {
+	 transition: all .3s ease;
+ }
+ .float-transition-enter, .float-transition-leave-to {
+	 transform: translateX(10px);
+	 opacity: 0;
+ }
+ .overlay_remind{
+	 position: absolute;
+	 top: 0;
+	 bottom: 0;
+	 left: 0;
+	 right: 0;
+	 z-index: 100;
+ }
+ .haigui-overlay_click{
+	 position: fixed;
+	 top: 0;
+	 bottom: 0;
+	 left: 0;
+	 right: 0;
+	 z-index: 20;
+ }
+ /* 表格中文字可以点击的css */
+.clickCell{
+	cursor: pointer;
+	color: #409EFF;
+}
+.clickCell:hover{
+	color: #66B1FF;
+}
+textarea::-webkit-scrollbar{
+	/* display: block; */
+	width: 6px;
+	height: 5px;
+	background: 0;
+}
+textarea::-webkit-scrollbar-thumb{
+	background: rgba(0,0,0,.15);
+	border-radius: 40px;
+	-webkit-transition: all ease .4s;
+	-moz-transition: all ease .4s;
+	-o-transition: all ease .4s;
+	transition: all ease .4s;
+}
+textarea::-webkit-scrollbar-track{
+	background: rgba(0,0,0,0);
+}
+textarea::-webkit-scrollbar-track-piece{
+	border-left: 0;
+}
+/* 重写 element-ui 样式 */
+.el-radio-button:focus:not(.is-focus):not(:active):not(.is-disabled){
+	box-shadow: none !important;
+}
+.el-table th{
+	color: #606266 !important;
+	background: #FAFAFA !important;
+}
+.el-table .cell{
+	font-size: 14px;
+}
+.el-pagination{
+	padding: 15px 20px !important;
+	overflow: hidden;
+}
+.el-popover p{
+	margin-bottom: 8px;
+}
+.el-dialog .el-dialog__header{
+	border-bottom:1px solid #EBEEF5;
+}
+.el-dialog .el-dialog__header .el-dialog__title{
+	font-size: 16px;
+}
+.el-dialog .el-dialog__footer{
+	border-top:1px solid #EBEEF5;
+}
+.content-container .el-tabs__header .el-tabs__nav {
+  margin-left: 20px;
+}
+.el-button--text span{
+	font-size: 14px;
+}
+.el-tooltip__popper{
+	max-width: 200px;
+}
+.el-dialog__footer{
+	padding: 10px 20px !important;
+}
+/* 带有滚动条模态框 */
+.restModal .el-dialog__body{
+	padding-right: 0;
+}

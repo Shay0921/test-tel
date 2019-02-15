@@ -1,0 +1,114 @@
+@keyframes hover-color {
+  from {
+    border-color: #c0c0c0; }
+  to {
+    border-color: #20a0ff; } }
+
+.haigui-radio,
+.haigui-checkbox {
+  position: absolute;
+  display: none; }
+
+.haigui-radio[disabled],
+.haigui-checkbox[disabled] {
+  cursor: not-allowed; }
+
+.haigui-radio + label,
+.haigui-checkbox + label {
+  position: relative;
+  display: block;
+  padding-left: 30px;
+  cursor: pointer;
+  vertical-align: middle;
+  height: 19px;
+  line-height: 21px;
+}
+  .haigui-radio + label:hover:before,
+  .haigui-checkbox + label:hover:before {
+    animation-duration: 0.4s;
+    animation-fill-mode: both;
+    animation-name: hover-color; }
+  .haigui-radio + label:before,
+  .haigui-checkbox + label:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    content: '';
+    border: 1px solid #c0c0c0; }
+  .haigui-radio + label:after,
+  .haigui-checkbox + label:after {
+    position: absolute;
+    display: none;
+    content: ''; }
+
+.haigui-radio[disabled] + label,
+.haigui-checkbox[disabled] + label {
+  cursor: not-allowed;
+  color: #e4e4e4; }
+  .haigui-radio[disabled] + label:hover, .haigui-radio[disabled] + label:before, .haigui-radio[disabled] + label:after,
+  .haigui-checkbox[disabled] + label:hover,
+  .haigui-checkbox[disabled] + label:before,
+  .haigui-checkbox[disabled] + label:after {
+    cursor: not-allowed; }
+  .haigui-radio[disabled] + label:hover:before,
+  .haigui-checkbox[disabled] + label:hover:before {
+    border: 1px solid #e4e4e4;
+    animation-name: none; }
+  .haigui-radio[disabled] + label:before,
+  .haigui-checkbox[disabled] + label:before {
+    border-color: #e4e4e4; }
+
+.haigui-radio:checked + label:before,
+.haigui-checkbox:checked + label:before {
+  animation-name: none; }
+
+.haigui-radio:checked + label:after,
+.haigui-checkbox:checked + label:after {
+  display: block; }
+
+.haigui-radio + label:before {
+  border-radius: 50%; }
+
+.haigui-radio + label:after {
+  top: 7px;
+  left: 7px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #20a0ff; }
+
+.haigui-radio:checked + label:before {
+  border: 1px solid #20a0ff; }
+
+.haigui-radio:checked[disabled] + label:before {
+  border: 1px solid #c9e2f9; }
+
+.haigui-radio:checked[disabled] + label:after {
+  background: #c9e2f9; }
+
+.haigui-checkbox + label:before {
+  border-radius: 3px; }
+
+.haigui-checkbox + label:after {
+  top: 2px;
+  left: 7px;
+  box-sizing: border-box;
+  width: 6px;
+  height: 12px;
+  transform: rotate(45deg);
+  border-width: 2px;
+  border-style: solid;
+  border-color: #fff;
+  border-top: 0;
+  border-left: 0; }
+
+.haigui-checkbox:checked + label:before {
+  border-color: #20a0ff;
+  background: #20A0FF; }
+
+.haigui-checkbox:checked[disabled] + label:before {
+  border-color: #0190fe;
+  background: #c9e2f9; }
